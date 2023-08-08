@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed Test App</title>
+    <link rel="stylesheet" href="./Css/style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script type="module" src="./Js/script.js"></script>
+
+  </head>
+  <body>
+    <div><h1>Typing Speed Test</h1></div>
+    <div id="app">
+      <div id="timeSection">
+        <div id="icon"><i class="fa fa-clock-o" style="font-size:36px"></i></i></div>
+        <div id="timer">Timer</div>
+        <div id="wp"></div>
+        <div id="accu"></div>
+        <button id="saveButton">Save Score</button>
+        <table id="dataTable">
+          <thead>
+              <tr>
+                  <th>Data 1</th>
+                  <th>Data 2</th>
+              </tr>
+          </thead>
+          <tbody>
+              <!-- Data rows will be dynamically added here -->
+          </tbody>
+      </table>
+      </div>
+      <div id="container">
+        <div id="quoteDisplay">quoteDisplay</div>
+        <textarea id="quoteInput" placeholder="typeHere"></textarea>
+      </div>
+      <div id="infoDisplay">
+        <button id="startButton">Start</button>
+        <button id="resetButton" disabled>Reset</button>
+        <div id="wpm">wpm</div>
+        <div id="mistakes">mistakes</div>
+        <div id="accuracy">accuracy</div>
+      </div>
+    </div>
+  </body>
+</html>
