@@ -9,40 +9,37 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script type="module" src="./Js/script.js"></script>
-
+    <script type="module" src="./Js/main.js"></script>
   </head>
   <body>
     <div><h1>Typing Speed Test</h1></div>
     <div id="app">
       <div id="timeSection">
-        <div id="icon"><i class="fa fa-clock-o" style="font-size:36px"></i></i></div>
-        <div id="timer">Timer</div>
-        <div id="wp"></div>
-        <div id="accu"></div>
-        <button id="saveButton">Save Score</button>
+        <div id="icon"><i class="fa fa-clock-o" style="font-size:24px"></i></i></div>
+        <div id="timer">Clock</div>
+        <button id="saveButton">Save data to Local Store</button>
         <table id="dataTable">
           <thead>
               <tr>
-                  <th>Data 1</th>
-                  <th>Data 2</th>
+                  <th>Previous WPM</th>
+                  <th>Previous Accuracy</th>
               </tr>
           </thead>
           <tbody>
-              <!-- Data rows will be dynamically added here -->
+              <!-- Local storage data -->
           </tbody>
       </table>
       </div>
       <div id="container">
-        <div id="quoteDisplay">quoteDisplay</div>
-        <textarea id="quoteInput" placeholder="typeHere"></textarea>
+        <div id="apiText">Each new beginning will present you with a snippet of random text from the API.</div>
+        <textarea id="typeText" placeholder="Click Start Button to Type Here For Speed and Accuracy Test"></textarea>
       </div>
       <div id="infoDisplay">
         <button id="startButton">Start</button>
         <button id="resetButton" disabled>Reset</button>
-        <div id="wpm">wpm</div>
-        <div id="mistakes">mistakes</div>
-        <div id="accuracy">accuracy</div>
+        <div id="wpm">Wpm</div>
+        <div id="mistakes">Mistakes</div>
+        <div id="accuracy">Accuracy</div>
       </div>
     </div>
   </body>
