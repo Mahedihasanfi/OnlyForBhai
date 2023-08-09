@@ -41,6 +41,15 @@ export default function typedText() {
         mistakes++;
         currentWordCorrect = false; // Set currentWordCorrect to false for the current word
       }
+
+        function currentWord() {
+        letter.classList.remove("current-word");
+
+        if (index === arrayTypeText.length) {
+          letter.classList.add("current-word");
+        }
+      }
+      currentWord();
     });
 
     mistakesElement.innerText = `Mistakes: ${mistakes}`;
