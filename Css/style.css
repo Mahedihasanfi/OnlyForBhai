@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  display: table-row;
+}
+
+h1 {
+  color: rgb(2, 46, 20);
+  text-align: center;
+  margin-top: 20px;
+}
+#app {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 30px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+  background-color: #022012;
+}
+
+#timeSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  font-size: 24px;
+  color: #fff;
+  background-color: #9c27b0;
+  border-radius: 50%;
+}
+
+#timer {
+  color: #000000;
+  font-size: 18px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 10px;
+  background-color: #b59f11;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#apiText {
+  border-radius: 10px;
+  background-color: #37474f;
+  border: 2px solid #546e7a;
+  font-family: "Georgia", serif;
+  font-size: 24px;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+#typeText {
+  background-color: #eceff1;
+  width: 100%;
+  height: 150px;
+  resize: none;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  font-family: "Georgia", serif;
+  font-size: 20px;
+  color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#infoDisplay {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #634a04;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#startButton,
+#resetButton,
+#saveButton {
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#saveButton {
+  margin-bottom: 5px;
+}
+
+#wpm,
+#mistakes,
+#accuracy {
+  font-size: 24px;
+  color: #fff;
+}
+
+.correct {
+  color: #00e676;
+}
+
+.incorrect {
+  color: #f44336;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  color: white;
+  background-color: #0c0437;
+  border: 3px solid rgb(71, 55, 3);
+}
+th,
+td {
+  border: 1px solid rgb(110, 168, 16);
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #2d3d04;
+}
