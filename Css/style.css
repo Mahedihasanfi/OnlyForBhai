@@ -145,3 +145,18 @@ td {
 th {
   background-color: #2d3d04;
 }
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.current-word{
+  animation: blink .6s infinite;
+  color:#f7df07;
+}
