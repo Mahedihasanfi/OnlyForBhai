@@ -21,9 +21,7 @@ function typeSession() {
   typeText.disabled = false;
   startButton.disabled = true;
   resetButton.disabled = false;
-  mistakes = 0;
-  accuracy = 0;
-  wpm = 0;
+  document.addEventListener("keydown", () => typeText.focus());
 }
 
 typedText(); // Input type text logic
@@ -31,6 +29,7 @@ myLocalStorage(); // Data save to local storage
 
 document.getElementById("resetButton").addEventListener("click", function () {
   location.reload();
+  localStorage.clear();
 });
 
 // Keyboard event
