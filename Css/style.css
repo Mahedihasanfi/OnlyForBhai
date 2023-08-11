@@ -100,8 +100,7 @@ h1 {
 }
 
 #startButton,
-#resetButton,
-#saveButton {
+#resetButton {
   color: #000000;
   border: none;
   padding: 10px 20px;
