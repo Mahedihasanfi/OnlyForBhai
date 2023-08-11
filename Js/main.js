@@ -37,6 +37,6 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     startButton.click();
   } else if (event.key === "Escape") {
-    resetButton.click();
+    location.reload();
   }
 });
